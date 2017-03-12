@@ -22,6 +22,8 @@
 	height:100%;
 	width:5em;
 	max-width:5em;
+	border : 1px solid #eaacac;
+	height : 5em;
 }
 
 .photo img {	
@@ -606,7 +608,7 @@ a.show-more {
 }
 
 .thumbnails h1 {
-	margin-left :-1.9px;margin-bottom:0.46em;margin-top : 0.37px;text-shadow: 1px 1px 70px #e8abab;
+	margin-left :-1.9px;margin-bottom:0.46em;margin-top : 0.37px;
 }
 
 .thumbnail .index {
