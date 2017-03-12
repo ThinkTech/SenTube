@@ -19,12 +19,7 @@ const display = (div,title,videos) => {
 	    	videos[i].duration = (minutes.length  ? minutes : ("0"+minutes)) + " : " + (seconds.length > 1 ? seconds : ("0"+seconds));
 	    	videos[i].viewCount = result.items[i].statistics.viewCount.replace(/\B(?=(\d{3})+\b)/g, ",");
 	    }
-	    var localStorage;
-		try {
-		   localStorage = window.localStorage;
-		} catch(e) {}
-	    var state;
-	    if(localStorage) state = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) : {};
+	    const state = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) : {};
 	    var index = state["panel_"+div.index()] ? state["panel_"+div.index()] : 0;
 	    page.render(div,{title : title, videos : videos.slice(index,index+limit)},thumbnail => {
 	    	if(index<limit) $(".video-nav-left",div).addClass("disabled");;
