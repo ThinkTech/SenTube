@@ -39,7 +39,7 @@ const display = (div,title,videos) => {
 	    	    	$(".status",div).html((index+limit)+"/"+length);
 	    	    });
 	    		state["panel_"+div.index()] = index;
-	    		if(localStorage) localStorage.setItem("state",JSON.stringify(state));
+	    		localStorage.setItem("state",JSON.stringify(state));
 	    	});
 	    	if(length<=limit) $(".video-nav-right",div).addClass("disabled");
 	    	$(".video-nav-right",div).click(function(e){
@@ -56,10 +56,10 @@ const display = (div,title,videos) => {
 	    	    	$(".status",div).html((index+limit)+"/"+length);
 	    	    });
 	    		state["panel_"+div.index()] = index;
-	    		if(localStorage) localStorage.setItem("state",JSON.stringify(state));
+	    		localStorage.setItem("state",JSON.stringify(state));
 	    	});
 	    	$(".playall",div).click(function(e){
-	    		if(localStorage) localStorage.setItem("videos",JSON.stringify(videos));
+	    		localStorage.setItem("videos",JSON.stringify(videos));
 	    	});	
 	    	div.fadeTo(1000,1);
 	    	$("div",thumbnail).addClass("animated flip");
