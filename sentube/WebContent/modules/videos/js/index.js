@@ -126,11 +126,11 @@ const display = (div,title,videos) => {
 	 videos.push({id : "qFLhGq0060w", title : "The Weeknd, Daft Punk - I Feel It Coming"});
 	 videos.push({id : "7wtfhZwyrcc", title : "Imagine Dragons - Believer"});
 	 videos.push({id : "J5qWnG5RQTk", title : "Train - Play That Song"});
-	 videos.push({id : "n0FOPTYJPXw", title : "Disclosure, Mary J. Blige - F For You"});
-	 videos.push({id : "TxEVPe7XMcs", title : "Take That - Love Love"});
-	 videos.push({id : "GaWXA5e0YTQ", title : "Willy Moon - Yeah Yeah"});
+	 videos.push({id : "vjIwmJMqrco", title : "will.i.am - The Hardest Ever"});
+	 videos.push({id : "XkcGuZHPbKk", title : "Jack White - I'm Shakin'"});
+	 videos.push({id : "_Nb4EHY_2bI", title : "Lil Wayne - God Bless Amerika"});
 	 videos.push({id : "t5Sd5c4o9UM", title : "Katy Perry, Kanye West - E.T"});
-	 videos.push({id : "163_C5UVU-I", title : "Paul McCartney - Hope For The Future"});
+	 videos.push({id : "3n71KUiWn1I", title : "Nicki Minaj, Rihanna - Fly"});
 	 videos.push({id : "7F37r50VUTQ", title : "ZAYN, Taylor Swift - I Don't Wanna Live Forever"});
 	 videos.push({id : "jrWIqrGhfwI", title : "Vaults - Lifespan"});
 	 videos.push({id : "LBr7kECsjcQ", title : "Fall Out Boy - Centuries"});
