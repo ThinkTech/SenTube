@@ -119,7 +119,7 @@ const display = (div,title,videos) => {
 	 videos.push({id : "Fjba4g93UX8", title : "HAKILL - Def saRAP"});
 	 display($(".videos:eq(0)"),"Senegal",videos);
 	 videos = new Array();
-	 videos.push({id : "xSauTBKoOqE", title : "Empire Of The Sun - Celebrate"});
+	 videos.push({id : "SC4xMk98Pdc", title : "Post Malone, Quavo - Congratulations"});
 	 videos.push({id : "Okn0WpJqgHE", title : "Alicia Keys, Kendrick Lamar - It's On Again"});
 	 videos.push({id : "QUQsqBqxoR4", title : "Sara Bareilles - Brave"});
 	 videos.push({id : "KJBHdKBOdcw", title : "Future, Miley Cyrus, Mr Hudson - Real and True"});
@@ -129,7 +129,7 @@ const display = (div,title,videos) => {
 	 videos.push({id : "vjIwmJMqrco", title : "will.i.am - The Hardest Ever"});
 	 videos.push({id : "XkcGuZHPbKk", title : "Jack White - I'm Shakin'"});
 	 videos.push({id : "_Nb4EHY_2bI", title : "Lil Wayne - God Bless Amerika"});
-	 videos.push({id : "t5Sd5c4o9UM", title : "Katy Perry, Kanye West - E.T"});
+	 videos.push({id : "mvixH3B5cDk", title : "Sunrise Avenue - Prisoner In Paradise"});
 	 videos.push({id : "3n71KUiWn1I", title : "Nicki Minaj, Rihanna - Fly"});
 	 videos.push({id : "7F37r50VUTQ", title : "ZAYN, Taylor Swift - I Don't Wanna Live Forever"});
 	 videos.push({id : "jrWIqrGhfwI", title : "Vaults - Lifespan"});
