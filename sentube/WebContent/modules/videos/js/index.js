@@ -120,12 +120,12 @@ const display = (div,title,videos) => {
 	 display($(".videos:eq(0)"),"Senegal",videos);
 	 videos = new Array();
 	 videos.push({id : "xSauTBKoOqE", title : "Empire Of The Sun - Celebrate"});
-	 videos.push({id : "MEkS_mQ0GlI", title : "Kerli - Zero Gravity"});
+	 videos.push({id : "Okn0WpJqgHE", title : "Alicia Keys, Kendrick Lama - It’s On Again"});
 	 videos.push({id : "QUQsqBqxoR4", title : "Sara Bareilles - Brave"});
 	 videos.push({id : "KJBHdKBOdcw", title : "Future, Miley Cyrus, Mr Hudson - Real and True"});
 	 videos.push({id : "OptZRvQtz8Q", title : "Shawn McDonald - We Are Brave"});
-	 videos.push({id : "7wtfhZwyrcc", title : "Imagine Dragons - Believer"});
-	 videos.push({id : "J5qWnG5RQTk", title : "Train - Play That Song"});
+	 videos.push({id : "QJFsva3I5qQ", title : "Russ Chimes - Turn Me Out"});
+	 videos.push({id : "x1MmHm4Wusc", title : "MNEK - Every Little Word"});
 	 videos.push({id : "vjIwmJMqrco", title : "will.i.am - The Hardest Ever"});
 	 videos.push({id : "XkcGuZHPbKk", title : "Jack White - I'm Shakin'"});
 	 videos.push({id : "_Nb4EHY_2bI", title : "Lil Wayne - God Bless Amerika"});
