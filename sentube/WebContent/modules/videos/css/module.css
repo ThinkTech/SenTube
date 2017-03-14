@@ -130,7 +130,7 @@ div.channel {
 	padding : 10px;
 	font-size : 115%;
 	font-weight : bold;
-	vertical-align : true;
+	text-shadow: 1px 1px 30px #040404;
 }
 
 .channel h1:first-of-type {
