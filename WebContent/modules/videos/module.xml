@@ -3,10 +3,10 @@
 <main>true</main>
 <cached>true</cached>
 <actions>
-	<action url="watch" script="module.groovy" method="watch">
+	<action url="watch" method="watch">
 	  <result>watch</result>
 	</action>
-	<action url="search" script="module.groovy" method="search">
+	<action url="search" method="search">
 	  <result>search</result>
 	</action>
 </actions>
