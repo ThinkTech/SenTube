@@ -256,7 +256,7 @@ body {
 #search input[type=text] {
 	width : 39.5%;
 	height : 28px;
-	border : 1.85px solid #e67a7a;
+	border : 1px solid #e67a7a;
 	font-size : 90%;
 	padding-left : 6px;
 	font-family : Roboto;
@@ -268,7 +268,7 @@ body {
 #search input[type=submit] {
 	width : 66px;
 	height : 28px;
-	border : 1.85px solid #e67a7a;
+	border : 1px solid #e67a7a;
 	border-left : none;
 	background-image : url(../images/search-20.png);
 	background-repeat : no-repeat;
