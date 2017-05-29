@@ -52,5 +52,4 @@ const search = query => {
 		    });
 		},true);
 	},true);
-	$("#search input[type=text]").val(query);
 };

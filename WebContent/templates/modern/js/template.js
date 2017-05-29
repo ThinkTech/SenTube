@@ -36,15 +36,6 @@ $("body").click(function(event){
 	if(!$("button.aside-toggle").is($(event.target)) && !$("button.aside-toggle span.icon-bar").is($(event.target)) && aside.hasClass("toggled")) aside.hide();
 });
 
-//search
-var search_over = true;  
-$("#search-input").keyup(function(){
-	const val = $(this).val().trim();
-	var list = $("#search-list").empty();
-	if(val && search_over) {
-		search_over = false;
-	}
-});
 
 });
 

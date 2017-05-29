@@ -12,7 +12,13 @@
     <!-- Module css -->
     <link href="${css}/module.css" rel="stylesheet"/> 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="templates/modern/images/favicon_32.png"  sizes="32x32"/>  
+    <link rel="shortcut icon" href="templates/modern/images/favicon_32.png"  sizes="32x32"/>
+    <meta property="og:site_name" content="Sentube">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="${baseUrl}">
+    <meta property="og:title" content="Welcome to Sentube">
+    <meta property="og:image" content="${baseUrl}/images/sentube.jpg">
+    <meta property="og:description" content="Platform for watching videos">  
   </head>
 <body>
  
@@ -33,9 +39,9 @@
         <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
       </div>
        <form id="search" action="videos/search" method="GET">
-        <input id="search-input" name="search_query" list="search-list" type="text" placeholder="Search..." autocomplete="off"/>
-        <datalist id="search-list"></datalist>
-        <input type="submit" value="&nbsp;"/>
+        <input  name="search_query"  type="text" placeholder="Search..."/>
+        <input type="submit" value=""
+        />
        </form>
       <div id="navbar" class="navbar-collapse collapse navbar_area">          
         <ul class="nav navbar-nav navbar-right custom_nav">

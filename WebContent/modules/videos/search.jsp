@@ -85,7 +85,7 @@
  <script src="${js}/search.js"></script>
   
  <script>
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
 	search("${query}");
 });
  </script> 
