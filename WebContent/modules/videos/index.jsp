@@ -21,7 +21,7 @@
 	     <span class="duration">{duration}</span>
 	   </div>  		   
 	   <div class="description">
-	   	<p class="view-count"><span>{viewCount} views</span></p>
+	   	<p class="view-count"><span>{viewCount}</span> <span data-translation="views"></span></p>
 	    <p class="title"><span>{title}</span></p>
 	   </div>
 	 </a>
@@ -49,7 +49,7 @@
 	     <span class="duration">{duration}</span>
 	   </div>  		   
 	   <div class="description">
-	   	<p class="view-count"><span>{viewCount} views</span></p>
+	   	<p class="view-count"><span>{viewCount}</span> <span data-translation="views"></span></p>
 	    <p class="title"><span>{title}</span></p>
 	   </div>
 	 </a>
