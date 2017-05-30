@@ -35,7 +35,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="${path}" title="SenTube Home">Sen<span>Tube</span></a>
+        <a class="navbar-brand" href="${path}">Sen<span>Tube</span></a>
         <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
       </div>
        <form id="search" action="videos/search" method="GET">
@@ -44,8 +44,8 @@
        </form>
       <div id="navbar" class="navbar-collapse collapse navbar_area">          
         <ul class="nav navbar-nav navbar-right custom_nav">
-          <li><a title="upload" class="upload">&nbsp;</a></li>
-          <li><a title="sign in" class="signin" data-translation="signIn"></a></li>                 
+          <li><a class="upload">&nbsp;</a></li>
+          <li><a  class="signin" data-translation="signIn"></a></li>                 
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -94,14 +94,14 @@
    </div>
    <hr/>
    <div>
-    <span title="Browse channels">
+    <span>
      <img src="templates/modern/images/add-20.png" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
       <span data-translation="browse"></span>
      </span>
    </div>
    <hr/>
    <p data-translation="sign-in-text"></p>
-   <a title="sign in" class="signin" data-translation="signIn"></a>
+   <a  class="signin" data-translation="signIn"></a>
  </aside>
  <main style="${watch ? 'width:100%' : 'opacity:1'}">
    <tiles:insertAttribute name="content"/>
