@@ -549,8 +549,11 @@ aside span {
 	padding-left : 14%;
 	font-size : 73%;
 	margin-bottom : 2px;
-	color : #444;
 	font-family : Tahoma;
+}
+
+aside > span {
+	color : #444;
 }
 
 aside span > span {
