@@ -1,5 +1,5 @@
-const search = query => {
-	app.get("https://www.googleapis.com/youtube/v3/search?key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&q="+query+"&type=video&part=snippet&order=date&maxResults=50",result => {
+const search = function(query) {
+	app.get("https://www.googleapis.com/youtube/v3/search?key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&q="+query+"&type=video&part=snippet&order=date&maxResults=50",function(result) {
 		const videos = new Array();
 		var length = result.items.length, id = "",i;
 		const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -8,11 +8,11 @@ const search = query => {
 			id += i < length-1 ? item.id.videoId +"," : item.id.videoId;
 			const video = {id : item.id.videoId, title : item.snippet.title,channel : item.snippet.channelTitle};
 			video.index = i+1;
-			video.publishedAt = new Date(item.snippet.publishedAt).toLocaleDateString("en-US",options);	
+			video.publishedAt = new Date(item.snippet.publishedAt).toLocaleDateString(page.language,options);	
 			video.description = item.snippet.description;
 			videos.push(video);
 		}
-		app.get("https://www.googleapis.com/youtube/v3/videos?key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&id="+id+"&part=contentDetails,statistics", result => {
+		app.get("https://www.googleapis.com/youtube/v3/videos?key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&id="+id+"&part=contentDetails,statistics", function(result) {
 			for(i=0;i<length;i++) {
 				if(result.items[i]) {
 		   	 		const duration = result.items[i].contentDetails.duration.substring(2, result.items[i].contentDetails.duration.length).toLowerCase();
@@ -25,9 +25,11 @@ const search = query => {
 	    	}
 	   	 	const div = $(".videos");
 	   	 	const limit = 10;
-		    page.render(div,{count : length,videos : videos.slice(0,limit)},() => {
+		    page.render(div,{count : length,videos : videos.slice(0,limit)},function() {
 		    	div.fadeTo(1000,1);
-		    	$("button",div).click(() => $(".filters",div).toggle());
+		    	$("button",div).click(function() {
+		    		$(".filters",div).toggle();
+		    	});
 		    	const pager = $(".pager",div);
 		    	const pages = length/10;
 		    	for(i=0;i<pages;i++) {
@@ -40,8 +42,8 @@ const search = query => {
 		    				$("a",pager).removeClass("active");
 		    				$(this).addClass("active");
 		    				const container = $("<div/>");
-		    				$('html, body').animate({scrollTop : 0},800,() => {
-		    					page.render(div,{videos : videos.slice((index*limit),((index+1)*limit))},false,container,() => {
+		    				$('html, body').animate({scrollTop : 0},800,function(){
+		    					page.render(div,{videos : videos.slice((index*limit),((index+1)*limit))},false,container,function(){
 			    	    	    	$(".video",div).remove();
 			    	    	    	$(".video",container).insertBefore(pager);
 			    	    	    });

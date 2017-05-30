@@ -213,6 +213,7 @@ html{
 body {
 	font-family : Roboto;
 	font-size : 100%;
+	opacity : 0;
 }
 
 :focus {outline:none;}
@@ -552,7 +553,13 @@ aside span {
 	font-family : Tahoma;
 }
 
-aside span:hover,aside li:hover {
+aside span > span {
+	display : inline-block;
+	padding : 0;
+	font-size : 100%;
+}
+
+aside span:hover, aside span span:hover,aside li:hover {
 	background-color : #444;
 	color : #fff;
 	cursor : pointer;
@@ -560,6 +567,9 @@ aside span:hover,aside li:hover {
 
 aside span.active {
 	background-color : #cc181e;
+}
+
+aside span.active span {
 	color : #fff;
 }
 
@@ -715,10 +725,20 @@ main {
   color: #d42323;
 }
 
+.language {
+	text-align: center;
+	padding : 20px;
+}
+
+.language select {
+	width : 100px;
+	height : 30px;
+}
+
 .developer{
   display: block;
   color: #d42323;
-  text-align: left;
+  text-align: center;
 }
 .developer a{
   color: #d3d3d3;

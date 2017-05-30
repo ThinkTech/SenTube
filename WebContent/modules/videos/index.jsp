@@ -1,16 +1,16 @@
 <div class="page-title">
-<a>Music</a>
+<a data-translation="music"></a>
 </div>
 <div>
 <div class="videos">
  <template type="text/x-dust-template">
- <h1><i class="fa fa-music"></i> {title}<a title="Previous" class="video-nav-left" href="#"><i class="fa fa-angle-left"></i></a><a title="Next" class="video-nav-right" href="#"><i class="fa fa-angle-right"></i></a></h1>
+ <h1><i class="fa fa-music"></i> <span data-translation="{title}"></span><a title="Previous" class="video-nav-left" href="#"><i class="fa fa-angle-left"></i></a><a title="Next" class="video-nav-right" href="#"><i class="fa fa-angle-right"></i></a></h1>
  <span class="actions">
  <select>
-  	<option>All</option>
-  	<option>New</option>
+  	<option data-translation="all"></option>
+  	<option data-translation="new"></option>
   </select>
- <a href="videos/watch?v=videos" class="playall" title="Play all" href="#"><i class="fa fa-play"></i></a></span>
+ <a href="videos/watch?v=videos" class="playall"  href="#"><i class="fa fa-play"></i></a></span>
  <span class="status">1/21</span>
   {#videos}
     <div class="video">
@@ -32,13 +32,13 @@
  
  <div class="videos">
  <template type="text/x-dust-template">
- <h1><i class="fa fa-globe"></i> {title}<a title="Previous" class="video-nav-left" href="#"><i class="fa fa-angle-left"></i></a><a title="Next" class="video-nav-right" href="#"><i class="fa fa-angle-right"></i></a></h1>
+ <h1><i class="fa fa-globe"></i> <span data-translation="{title}"></span><a title="Previous" class="video-nav-left" href="#"><i class="fa fa-angle-left"></i></a><a title="Next" class="video-nav-right" href="#"><i class="fa fa-angle-right"></i></a></h1>
  <span class="actions">
  <select>
-    <option>All</option>
-  	<option>New</option>
+    <option data-translation="all"></option>
+  	<option data-translation="new"></option>
   </select>
- <a href="videos/watch?v=videos" class="playall" title="Play all" href="#"><i class="fa fa-play"></i></a></span>
+ <a href="videos/watch?v=videos" class="playall"  href="#"><i class="fa fa-play"></i></a></span>
  <span class="status">1/21</span>
   {#videos}
     <div class="video">

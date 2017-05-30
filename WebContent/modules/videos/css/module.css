@@ -656,6 +656,7 @@ a.show-more {
 	font-size : 78%;
 	max-height : 2.6em;
 	overflow : hidden;
+	display : inline-block;
 }
 .videos .description .view-count {
 	color:#d42323;
@@ -684,10 +685,17 @@ a.show-more {
 }
 
 .thumbnails .description span:nth-child(3) {
+	display : inline-block;
 	font-size : 62%;
 	color : #444;
 }
 
+.thumbnails .description span:nth-child(4) {
+	display : inline-block;
+	font-size : 62%;
+	color : #444;
+	margin-left : 2px;
+}
 
 .search-results {
 	min-height : 660px;
@@ -849,7 +857,7 @@ main.full .search-results {
   
 @media(max-width:991px ){
 	.video-info h1 {line-height : 1.45em}
-	.thumbnails > span {font-size : 80%}
+	.thumbnails > span {font-size : 60%}
 	.videos h1 {margin-top:6px;margin-left:-9px}
 	.thumbnails .thumbnail{width:95%;height:8.75em;display:block;}
 	.thumbnails .description{width:100%;height:auto;}

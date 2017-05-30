@@ -60,10 +60,16 @@ $('.scrollToTop').click(function(){
   return false;
 });
 
+$("div.language select").on("change",function(){
+	var language = $(this).val();
+	page.retranslate(language);
+});
+
 
 /* ----------------------------------------------------------- */
 /*  7. Preloader
 /* ----------------------------------------------------------- */
 jQuery(window).ready(function() { // makes sure the whole site is loaded
    $('body').delay(100).css({'overflow':'visible'});
+   
 });

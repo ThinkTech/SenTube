@@ -131,6 +131,23 @@ app.engine("text/x-dust-template",function(info) {
     dust.renderSource(info.source,info.data,function(err, out) {
       var html = $.parseHTML(out);
       info.append ? info.destination.append(html) : info.destination.html(html);
+      $.each($("[data-translation]",info.destination),function(index,element){
+			var propertyName = $(element).attr("data-translation");
+			var value = i18n(propertyName);
+			if($(element).is('input:submit')) {
+				$(element).attr("value",value).attr("title",value);
+			}
+			else if($(element).is('input') || $(element).is('textarea') || $(element).is('select')) {
+				$(element).attr("placeholder",value).attr("title",value);
+			}
+			else {
+				$(element).html(value);
+			}
+		});
+		$.each($("[data-info]",html),function(index,element){
+			var propertyName = $(element).attr("data-info-translation");
+			$(element).attr("data-info",i18n(propertyName));
+		});
       if(info.callback) info.callback($(html));
     });
   });

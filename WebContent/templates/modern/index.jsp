@@ -39,14 +39,13 @@
         <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
       </div>
        <form id="search" action="videos/search" method="GET">
-        <input  name="search_query"  type="text" placeholder="Search..."/>
-        <input type="submit" value=""
-        />
+        <input  name="search_query"  type="text" data-translation="search" placeholder="Search..."/>
+        <input type="submit" value=""/>
        </form>
       <div id="navbar" class="navbar-collapse collapse navbar_area">          
         <ul class="nav navbar-nav navbar-right custom_nav">
           <li><a title="upload" class="upload">&nbsp;</a></li>
-          <li><a title="sign in" class="signin">Sign in</a></li>                 
+          <li><a title="sign in" class="signin" data-translation="signIn"></a></li>                 
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -56,80 +55,71 @@
  <aside style="${watch ? 'display:none' : 'opacity:1'}">
    <div>
     <ol>
-     <li>
-     Home
-     </li>
-     <li>
-     Trending
-     </li>
-     <li>
-      History
-      
-     </li>
+     <li data-translation="home"></li>
+     <li data-translation="trending"></li>
+     <li data-translation="history"></li>
     </ol>
    </div>
    <hr/>
-   <h3>
-      Best of SenTube
-    </h3>
+   <h3 data-translation="best-of"></h3>
     <div>
-     <span class="active" title="Music">
+     <span class="active">
      <img src="//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     Music
+     <span data-translation="music">Music</span>
      </span>
-     <span title="Sports">
+     <span>
      <img src="//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     Sports
+     <span data-translation="sports">Sports</span>
      </span>
-     <span title="Gaming">
+     <span>
      <img src="//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     Gaming
+     <span data-translation="gaming">Gaming</span>
      </span>
-     <span title="Movies">
+     <span>
      <img src="//i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg" height="20" width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     Movies
+      <span data-translation="movies">Movies</span>
      </span>
-     <span title="News">
+     <span>
      <img src="//i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     News
+      <span data-translation="news">News</span>
      </span>
-     <span title="Live">
+     <span>
      <img src="//i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg" data-ytimg="1"  aria-hidden="true" width="20" alt="" height="20">
-     Live
+      <span data-translation="live">Live</span>
      </span>
-     <span title="360° Video">
+     <span>
      <img src="//i.ytimg.com/i/zuqhhs6NWbgTzMuM09WKDQ/1.jpg" data-ytimg="1"  aria-hidden="true" width="20" alt="" height="20">
-     360° Video
+      <span data-translation="360"></span>
      </span>
    </div>
    <hr/>
    <div>
     <span title="Browse channels">
      <img src="templates/modern/images/add-20.png" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     Browse channels
+      <span data-translation="browse"></span>
      </span>
    </div>
    <hr/>
-   <p>
-   Sign in now to see your channels and recommendations!
-   </p>
-   <a title="sign in" class="signin">Sign in</a>
+   <p data-translation="sign-in-text"></p>
+   <a title="sign in" class="signin" data-translation="signIn"></a>
  </aside>
  <main style="${watch ? 'width:100%' : 'opacity:1'}">
    <tiles:insertAttribute name="content"/>
  </main>   
   <!-- start footer -->
   <footer id="footer">
+     <div class="language">
+		<select id="select">
+		     <option id="english" value="en" data-translation="english">English</option>
+		    <option id="french" value="fr" data-translation="french">French</option>
+		</select>
+	  </div>
     <div class="container">
       <div class="row">        
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="footer_bottom">
-            <div class="copyright">
-              <p>&copy; 2017 all rights reserved</p>
-            </div>
             <div class="developer">
-              <p>Designed by <a target="_blank" href="http://wpfreeware.com/">Wpfreeware</a>
-              and <a target="_blank" href="http://www.thinktech.sn/">ThinkTech</a></p>
+              <p data-translation="design-by"></p>
             </div>
           </div>
         </div>
@@ -148,6 +138,15 @@
  
   <!-- template js file include -->
   <script src="templates/modern/js/template.js"></script>  
+  
+  <script>
+       app.ready(function(){
+          page.translate("i18n/app","${request.locale.language}",function(){
+        	  $("body").animate({opacity : 1},10);
+        	  $("div.language select").val(page.language);
+          });
+       });
+     </script> 
    
   </body>
 </html>

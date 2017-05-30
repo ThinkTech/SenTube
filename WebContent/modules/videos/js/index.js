@@ -1,4 +1,4 @@
-const display = (div,title,videos) => {
+const display = function(div,title,videos){
 	 var length,id = "",limit=12;
 	 var width = window.innerWidth;
 	 limit = width >= 992 && width <= 1199 ? 10 : limit;
@@ -7,7 +7,7 @@ const display = (div,title,videos) => {
 	 limit = width <= 360 ? 1 : limit;
 	 length = videos.length;
 	 for(var i=0;i<length;i++) id += i < length-1 ? videos[i].id +"," : videos[i].id;
-	 app.get("https://www.googleapis.com/youtube/v3/videos?key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&id="+id+"&part=snippet,contentDetails,statistics", result => {
+	 app.get("https://www.googleapis.com/youtube/v3/videos?key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&id="+id+"&part=snippet,contentDetails,statistics", function(result) {
 		length = result.items.length;
 	    for(i=0;i<length;i++) {
 	    	videos[i].index = i+1;
@@ -21,7 +21,7 @@ const display = (div,title,videos) => {
 	    }
 	    const state = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) : {};
 	    var index = state["panel_"+div.index()] ? state["panel_"+div.index()] : 0;
-	    page.render(div,{title : title, videos : videos.slice(index,index+limit)},thumbnail => {
+	    page.render(div,{title : title, videos : videos.slice(index,index+limit)},function(thumbnail){
 	    	if(index<limit) $(".video-nav-left",div).addClass("disabled");;
 	    	if(index>=length-limit) $(".video-nav-right",div).addClass("disabled");
 	    	$(".status",div).html((index+limit)+"/"+length);
@@ -30,9 +30,9 @@ const display = (div,title,videos) => {
 	    		const container = $("<div/>");
 	    		$(".video-nav-right",div).removeClass("disabled");
 	    		index-=limit;
-	    		if(index<=0) $(".video-nav-left",div).addClass("disabled");;
+	    		if(index<=0) $(".video-nav-left",div).addClass("disabled");
 	    		const top = $(window).scrollTop();
-	    		page.render(div,{title : title, videos : videos.slice(index,index+limit)},false,container,() => {
+	    		page.render(div,{title : title, videos : videos.slice(index,index+limit)},false,container,function(){
 	    	    	$("> div",div).remove();
 	    	    	$("> div",container).insertAfter($(".status",div)).addClass("animated flip");
 	    	    	$('html, body').animate({scrollTop : top},800);
@@ -49,7 +49,7 @@ const display = (div,title,videos) => {
 	    		index+=limit;
 	    		if(index>=length-limit) $(".video-nav-right",div).addClass("disabled");
 	    		const top = $(window).scrollTop();
-	    		page.render(div,{title : title, videos : videos.slice(index,index+limit)},false,container,() => {
+	    		page.render(div,{title : title, videos : videos.slice(index,index+limit)},false,container,function(){
 	    	    	$("> div",div).remove();
 	    	    	$("> div",container).insertAfter($(".status",div)).addClass("animated flip");
 	    	    	$('html, body').animate({scrollTop : top},800);
@@ -67,7 +67,7 @@ const display = (div,title,videos) => {
 	 },true);
  };
  
- document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", function(){
 	 var videos = new Array();
 	 videos.push({id : "BGt1htuyhiU", title : "Youssou Ndour - Be careful"});
 	 videos.push({id : "KlE8MlCWgmI", title : "Viviane Chidid - No Stress"});
