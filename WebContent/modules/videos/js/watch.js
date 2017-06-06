@@ -22,7 +22,6 @@ const display = function(videoId,cache){
 		video.videoId = videoId;
 		video.title = info.items[0].snippet.title;
 		document.title = video.title;
-		console.log(page.language);
 		video.publishedAt = new Date(info.items[0].snippet.publishedAt).toLocaleDateString(page.language,options);
 		video.description = info.items[0].snippet.description;
 		video.description = video.description.linkify();

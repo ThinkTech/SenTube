@@ -1,7 +1,7 @@
 <module>
 <type>front-end</type>
 <main>true</main>
-<cached>true</cached>
+<cached>false</cached>
 <actions>
 	<action url="watch" method="watch">
 	  <result>watch</result>

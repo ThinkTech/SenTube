@@ -1,4 +1,5 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,12 +14,30 @@
     <link href="${css}/module.css" rel="stylesheet"/> 
     <!-- Favicon -->
     <link rel="shortcut icon" href="templates/modern/images/favicon_32.png"  sizes="32x32"/>
-    <meta property="og:site_name" content="Sentube">
+    
+    <s:if test="%{!watch}">
+     <meta property="og:site_name" content="Sentube">
      <meta property="og:type" content="website">
      <meta property="og:url" content="${baseUrl}">
     <meta property="og:title" content="Welcome to Sentube">
     <meta property="og:image" content="${baseUrl}/images/sentube.jpg">
     <meta property="og:description" content="Platform for watching videos">  
+    </s:if>
+     <s:if test="%{watch}">
+     <meta property="og:url" content="${baseUrl}/videos/watch?v=${id}">
+    <meta property="og:title" content="${info.items[0].snippet.title}">
+    <meta property="og:image" content="https://i.ytimg.com/vi/${id}/maxresdefault.jpg">
+     <meta property="og:image:width" content="256">
+     <meta property="og:image:height" content="256">
+    <meta property="og:description" content="${info.items[0].snippet.description}">  
+     <meta property="og:type" content="video">
+     <meta property="og:video:url" content="http://www.youtube.com/v/${id}?version=3&amp;autohide=1">
+        <meta property="og:video:secure_url" content="https://www.youtube.com/v/${id}?version=3&amp;autohide=1">
+        <meta property="og:video:type" content="application/x-shockwave-flash">
+        <meta property="og:video:width" content="1280">
+        <meta property="og:video:height" content="720">
+        
+    </s:if>
   </head>
 <body>
  
