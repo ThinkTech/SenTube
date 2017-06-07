@@ -7,7 +7,7 @@
   <span class="result-count">{count} <span data-translation="results"></span></span>
   {#videos}
     <div class="video">
-	  <a href="videos/watch?v={id}">
+	  <a href="watch?v={id}">
 	   <div class="thumbnail">
 	     <img src="https://i.ytimg.com/vi/{id}/mqdefault.jpg"/>  
 	     <span class="index">{index}</span>  		   	     
