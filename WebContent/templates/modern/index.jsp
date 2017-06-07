@@ -24,7 +24,7 @@
     <meta property="og:description" content="Platform for watching videos">  
     </s:if>
      <s:if test="%{watch}">
-     <meta property="og:url" content="${baseUrl}/videos/watch?v=${id}">
+     <meta property="og:url" content="${baseUrl}/watch?v=${id}">
     <meta property="og:title" content="${info.items[0].snippet.title}">
     <meta property="og:image" content="https://i.ytimg.com/vi/${id}/maxresdefault.jpg">
      <meta property="og:image:width" content="256">
