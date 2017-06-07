@@ -57,7 +57,7 @@
         <a class="navbar-brand" href="${path}">Sen<span>Tube</span></a>
         <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
       </div>
-       <form id="search" action="videos/search" method="GET">
+       <form id="search" action="search" method="GET">
         <input  name="search_query"  type="text" data-translation="search" placeholder="Search..."/>
         <input type="submit" value=""/>
        </form>

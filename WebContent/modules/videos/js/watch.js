@@ -91,7 +91,7 @@ const getVideos = function(channelId) {
 				  $("a",thumbnail).click(function(){
 					 const id = $(this).attr("id");
 					 display(id,true);
-					 history.pushState({id:id},null,"videos/watch?v="+id);
+					 history.pushState({id:id},null,"watch?v="+id);
 					 $('html, body').animate({scrollTop : 0},800);
 					 return false;
 				  });
@@ -112,7 +112,7 @@ const getVideos = function(channelId) {
 				  $("a",thumbnail).click(function(){
 					 const id = $(this).attr("id");
 					 display(id);
-					 history.pushState({id:id},null,"videos/watch?v="+id);
+					 history.pushState({id:id},null,"watch?v="+id);
 					 $('html, body').animate({scrollTop : 0},800);
 					 return false;
 				  });
@@ -159,7 +159,7 @@ const getMoreVideos = function(channelId,token){
 				  $("a",thumbnail).click(function(){
 					 const id = $(this).attr("id");
 					 display(id,true);
-					 history.pushState({id:id},null,"videos/watch?v="+id);
+					 history.pushState({id:id},null,"watch?v="+id);
 					 $('html, body').animate({scrollTop : 0},800);
 					 return false;
 				  });
@@ -278,7 +278,7 @@ const getLatestVideos = function(channel) {
 			  $("a",thumbnail).click(function(){
 				 const id = $(this).attr("id");
 				 display(id,true);
-				 history.pushState({id:id},null,"videos/watch?v="+id);
+				 history.pushState({id:id},null,"watch?v="+id);
 				 $('html, body').animate({scrollTop : 0},800);
 				 return false;
 			 });

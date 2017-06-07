@@ -10,11 +10,11 @@
   	<option data-translation="all"></option>
   	<option data-translation="new"></option>
   </select>
- <a href="videos/watch?v=videos" class="playall"  href="#"><i class="fa fa-play"></i></a></span>
+ <a href="watch?v=videos" class="playall"  href="#"><i class="fa fa-play"></i></a></span>
  <span class="status">1/21</span>
   {#videos}
     <div class="video">
-	  <a href="videos/watch?v={id}" title="{title}">
+	  <a href="watch?v={id}" title="{title}">
 	   <div class="thumbnail"> 		
 	     <img src="https://i.ytimg.com/vi/{id}/mqdefault.jpg"/>  
 	     <span class="index">{index}</span> 	     
@@ -38,11 +38,11 @@
     <option data-translation="all"></option>
   	<option data-translation="new"></option>
   </select>
- <a href="videos/watch?v=videos" class="playall"  href="#"><i class="fa fa-play"></i></a></span>
+ <a href="watch?v=videos" class="playall"  href="#"><i class="fa fa-play"></i></a></span>
  <span class="status">1/21</span>
   {#videos}
     <div class="video">
-	  <a href="videos/watch?v={id}" title="{title}">
+	  <a href="watch?v={id}" title="{title}">
 	   <div class="thumbnail">
 	     <img src="https://i.ytimg.com/vi/{id}/mqdefault.jpg"/>
 	      <span class="index">{index}</span>   		   	     
