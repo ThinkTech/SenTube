@@ -1,12 +1,8 @@
 <module>
-<type>front-end</type>
-<main>true</main>
-<actions>
-	<action url="watch" method="watch">
-	  <result>watch</result>
-	</action>
-	<action url="search" method="search">
-	  <result>search</result>
-	</action>
-</actions>
+  <type>front-end</type>
+  <main>true</main>
+  <actions>
+	  <action url="watch" method="watch" page="watch"/>
+	  <action url="search" method="search" page="search"/>
+  </actions>
 </module>
