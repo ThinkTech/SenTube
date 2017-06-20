@@ -26,7 +26,7 @@
      <s:if test="%{watch}">
      <meta property="og:url" content="${baseUrl}/watch?v=${id}">
     <meta property="og:title" content="${info.items[0].snippet.title}">
-    <meta property="og:image" content="https://i.ytimg.com/vi/${id}/mqdefault.jpg">
+    <meta property="og:image" content="https://i.ytimg.com/vi/${id}/hqdefault.jpg">
      <meta property="og:image:width" content="256">
      <meta property="og:image:height" content="256">
     <meta property="og:description" content="${info.items[0].snippet.description}">  
