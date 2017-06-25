@@ -747,6 +747,22 @@ main {
   color: #d3d3d3;
 }
 
+.message-404 {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding-top: 75px;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.message-404 p {
+      color : #fb5c5c;
+}
+
+
 /*--------------------*/
 /* Responsive Style */
 /*--------------------*/

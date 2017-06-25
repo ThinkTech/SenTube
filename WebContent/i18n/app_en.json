@@ -38,6 +38,7 @@
 	"latest":"Latest Videos",
 	"search-results":"Search Results",
 	"results":"Results",
-	"design-by": "&copy;2017 Designed by <a target='_blank' href='http://wpfreeware.com/'>Wpfreeware</a> and <a target='_blank' href='http://www.thinktech.sn/'>ThinkTech</a>"	
+	"design-by": "&copy;2017 Designed by <a target='_blank' href='http://wpfreeware.com/'>Wpfreeware</a> and <a target='_blank' href='http://www.thinktech.sn/'>ThinkTech</a>",
+	"message-404":"The page requested cannot be found."	
 }
 }

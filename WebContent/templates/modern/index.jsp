@@ -36,7 +36,6 @@
         <meta property="og:video:type" content="application/x-shockwave-flash">
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
-        
     </s:if>
   </head>
 <body>
