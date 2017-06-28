@@ -262,6 +262,7 @@ body {
 	color : #444;
 	font-weight : bold;
 	background-color : #fff;
+	margin-top : 1px;
 }
 
 #search input[type=submit] {
@@ -274,6 +275,7 @@ body {
 	background-position : 50% 50%;
 	position : absolute;
 	background-color : #f8f8f8;
+	margin-top : 1px;
 }
 
 
@@ -752,8 +754,7 @@ main {
 	body{font-size:100%;}
 	.navbar-brand {top : 0.19em;margin-left: 10px;font-size: 141%;height: auto;width: 213px;}
   .navbar-brand>img{height: 100%;}
-   #search input[type=text] {margin-top:-1px;width : 30%;margin-left:-5px}
-   #search input[type=submit] {margin-top:-1px;}
+   #search input[type=text] {width : 30%;margin-left:-5px}
    #wait {padding-left: 29.3%;padding-top : 18.8%}
    main {width:100%}
    aside {display:none} 
@@ -764,8 +765,8 @@ main {
 	body{font-size:95%;}
 	#footer {padding-left:17%;}
 	.navbar-brand {margin-left:-8px;left : 23px;top : 0.30em;margin-left: 10px;}
-  #search input[type=text] {width : 58%;margin-left:-40px;margin-top:1px}
-  #search input[type=submit] {width : 30px;margin-top:1px}
+  #search input[type=text] {width : 58%;margin-left:-40px;}
+  #search input[type=submit] {width : 30px;}
    #wait {padding-left: 44%;padding-top : 29.6%}
 }
 @media(max-width:640px){
@@ -777,8 +778,6 @@ main {
   #search input[type=text] {width : 42%;margin-left:-40px;margin-top:-0.1em}
   #search input[type=submit] {width : 30px;margin-top:-0.1em}
   #wait {padding-left: 43%;padding-top : 30%}
-  .footer_bottom {margin-left:-40px;font-size : 99%}
-  .footer_bottom p {white-space : nowrap;}
 }
 
  
@@ -793,8 +792,6 @@ main {
   #search input[type=submit] {width : 30px;margin-top:-0.125em}
  #wait {padding-left: 40%;padding-top : 30%}
   #footer {font-size : 65%}
-  .footer_bottom {margin-left:-40px;font-size : 99%}
-  .footer_bottom p {white-space : nowrap;}
   
 }
 @media(max-width:360px ){
@@ -806,8 +803,6 @@ main {
  #search {top : 0.95em}
 #search input[type=text] {width : 30%;margin-left:-48px;margin-top:-0.188em}
   #search input[type=submit] {width : 30px;margin-top:-0.188em}
- .footer_bottom {margin-left:-40px;font-size : 99%}
-  .footer_bottom p {white-space : nowrap;}
 }
 @media(max-width:320px ){
 	body{font-size:85%;}
@@ -816,6 +811,4 @@ main {
 	#search {top : 0.95em}
 	#search input[type=text] {width : 28%;margin-left:-62px;margin-top:-0.24em}
   #wait {padding-top : 32%;padding-left : 35%}
-  .footer_bottom {margin-left:-40px;font-size : 99%}
-  .footer_bottom p {white-space : nowrap;}
 }
