@@ -14,7 +14,7 @@ class VideoAction extends ActionSupport {
 	       def location =  "https://www.googleapis.com/youtube/v3/videos?id="+id+"&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet"
 	       def connection = new URL(location).openConnection() as HttpURLConnection
 	       connection.setRequestProperty( 'User-Agent', 'groovy' )
-		   connection.setRequestProperty( 'Accept', 'application/json' )
+	       connection.setRequestProperty( 'Accept', 'application/json' )
 	       if(connection.responseCode == 200) { 
 		      def info = new JsonSlurper().parseText(connection.inputStream.text)
 		      String description = info.items[0].snippet.description
@@ -23,9 +23,9 @@ class VideoAction extends ActionSupport {
 		      info.items[0].snippet.description = description
 		      request.setAttribute("info",info)
 		      SUCCESS
-			} else {
+          } else {
 			  response.sendRedirect(request.contextPath+"/")
-			}
+		  }
 			
 		}
 	    else {
