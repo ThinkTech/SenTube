@@ -23,9 +23,9 @@ class VideoAction extends ActionSupport {
 		      info.items[0].snippet.description = description
 		      request.setAttribute("info",info)
 		      SUCCESS
-          } else {
+		   } else {
 			  response.sendRedirect(request.contextPath+"/")
-		  }
+		   }
 			
 		}
 	    else {
