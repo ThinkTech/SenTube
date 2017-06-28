@@ -37,7 +37,7 @@
 				<version>1.8</version>
 				<configuration>
 					<email>dev@thinktech.sn</email>
-					<password>mirhosting</password>
+					<password>${mirhosting.password}</password>
 					<environment>sentube</environment>
 					<api_hoster>app.mircloud.host</api_hoster>
 				</configuration>
