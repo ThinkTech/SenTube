@@ -9,8 +9,8 @@ class VideoAction extends ActionSupport {
 	
 	def watch()  {
 	    id = request.getParameter("v")
-	    watch = true
 	    if(id) {
+	       watch = true
 	       def location =  "https://www.googleapis.com/youtube/v3/videos?id="+id+"&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet"
 	       def connection = new URL(location).openConnection() as HttpURLConnection
 	       connection.setRequestProperty( 'User-Agent', 'groovy' )
