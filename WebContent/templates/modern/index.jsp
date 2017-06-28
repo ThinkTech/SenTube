@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>SenTube</title>
     <base href="${path}"/>
+    <!-- Metamorphosis css -->
+    <link href="css/metamorphosis.css" rel="stylesheet"/> 
     <!-- Template css -->
     <link href="templates/modern/css/template.css" rel="stylesheet"/> 
     <!-- Module css -->
@@ -83,27 +85,27 @@
     <div>
      <span class="active">
      <img src="//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     <span data-translation="music">Music</span>
+     <span data-translation="music"></span>
      </span>
      <span>
      <img src="//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     <span data-translation="sports">Sports</span>
+     <span data-translation="sports"></span>
      </span>
      <span>
      <img src="//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-     <span data-translation="gaming">Gaming</span>
+     <span data-translation="gaming"></span>
      </span>
      <span>
      <img src="//i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg" height="20" width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-      <span data-translation="movies">Movies</span>
+      <span data-translation="movies"></span>
      </span>
      <span>
      <img src="//i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg" height="20"  width="20" data-ytimg="1" aria-hidden="true" alt=""/>
-      <span data-translation="news">News</span>
+      <span data-translation="news"></span>
      </span>
      <span>
      <img src="//i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg" data-ytimg="1"  aria-hidden="true" width="20" alt="" height="20">
-      <span data-translation="live">Live</span>
+      <span data-translation="live"></span>
      </span>
      <span>
      <img src="//i.ytimg.com/i/zuqhhs6NWbgTzMuM09WKDQ/1.jpg" data-ytimg="1"  aria-hidden="true" width="20" alt="" height="20">
