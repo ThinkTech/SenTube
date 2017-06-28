@@ -18,9 +18,8 @@ class VideoAction extends ActionSupport {
 	       if(connection.responseCode == 200) { 
 		      def info = new JsonSlurper().parseText(connection.inputStream.text)
 		      String description = info.items[0].snippet.description
-		      description = description.replace("\"", "").replace("\n", " ")
 		      if(description.length() > 500) description = description.substring(0,500)
-		      info.items[0].snippet.description = description
+		      info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
 		      request.setAttribute("info",info)
 		      SUCCESS
 		   } else {
