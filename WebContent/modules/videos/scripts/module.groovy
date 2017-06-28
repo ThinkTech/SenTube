@@ -1,7 +1,7 @@
 import org.metamorphosis.core.ActionSupport
 import groovy.json.JsonSlurper
 
-class VideoAction extends ActionSupport {
+class ModuleAction extends ActionSupport {
 
 	def id
 	def query
@@ -39,4 +39,4 @@ class VideoAction extends ActionSupport {
 	
 }
 
-new VideoAction()
+new ModuleAction()
