@@ -44,6 +44,7 @@
 	font-family : Tahoma;
 	color : #444;
 	font-size : 80%;
+	text-transform: lowercase;
 }
 
 .like:before {
@@ -146,8 +147,10 @@ div.channel {
     height: 28px;
     white-space : nowrap;
     padding-left : 45px;
-    padding-top : 4px;
+    padding-top : 0px;
     margin-left : 9px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .channel .image-card{
@@ -366,8 +369,8 @@ a.show-more {
 }
 
 .video-info .views h1 {
-	font-family :Tahoma;color:#666;margin-right:0.8125em;border-bottom:2px solid #e62117;
-	line-height:1.625em;font-size:130%;padding-right:0;padding-top:0em;margin-bottom:0.203125em;
+	color:#666;margin-right:0.8125em;border-bottom:2px solid #e62117;
+	line-height:1.625em;font-size:140%;padding-right:0;padding-top:0.80em;margin-bottom:0.203125em;
 }
 
 
@@ -377,7 +380,7 @@ a.show-more {
 
 .thumbnails > h1 {
 	display : inline-block;
-	width : 40%;
+	width : 30%;
 }
 
 .thumbnails > span {
@@ -640,7 +643,6 @@ a.show-more {
 .videos .description{
 	width:102%;
 	margin-left : -6px;
-	margin-top : -12px;
 }
 
 .videos .thumbnail span,.thumbnails .description span {
@@ -651,7 +653,6 @@ a.show-more {
 
 .videos .description span,.thumbnails .description span:nth-child(1) {
 	font-weight : bold;
-	margin-top : 2px;
 	line-height : 1.3em;
 	font-size : 78%;
 	max-height : 2.6em;
@@ -837,7 +838,7 @@ main.full .search-results {
 	.videos h1 {margin-top:6px;margin-left:-8px}
 	.video{width:19%;}
 	.videos .thumbnail{height:6em;}
-  .thumbnails {margin-left: -3.25em;width:30%}
+  .thumbnails {margin-left: -4.25em;width:30%}
   .thumbnails .thumbnail{width:44%;height:5em;display:inline-block;}
   .thumbnails .description{width:52%;display:inline-block;vertical-align:top;}
   .video-info .views span {font-size : 65%}
@@ -857,7 +858,7 @@ main.full .search-results {
   
 @media(max-width:991px ){
 	.video-info h1 {line-height : 1.45em}
-	.thumbnails > span {font-size : 60%}
+	.thumbnails > span {font-size : 49%}
 	.videos h1 {margin-top:6px;margin-left:-9px}
 	.thumbnails .thumbnail{width:95%;height:8.75em;display:block;}
 	.thumbnails .description{width:100%;height:auto;}
@@ -867,7 +868,7 @@ main.full .search-results {
 	.channel .videos .thumbnail .duration {right:1.5em}
 	.video-comments > div > div {width:80%;}
    .videos {padding-bottom : 5px}
-   .thumbnails > h1 {width:25%;font-size: 75%; margin-top: 2.7px;vertical-align: middle;}
+   .thumbnails > h1 {width:29%;font-size: 75%; margin-top: 2.7px;vertical-align: middle;}
    .search-results .videos .thumbnail {width:40%}
    .search-results .videos .description{width:56%;}
 }

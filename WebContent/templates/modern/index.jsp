@@ -134,16 +134,8 @@
 		    <option id="french" value="fr" data-translation="french">French</option>
 		</select>
 	  </div>
-    <div class="container">
-      <div class="row">        
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="footer_bottom">
-            <div class="developer">
-              <p data-translation="design-by"></p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="developer">
+         <p data-translation="design-by"></p>
     </div>
   </footer>
   <!-- End footer -->
