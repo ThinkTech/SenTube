@@ -8,10 +8,10 @@ class ModuleAction extends ActionSupport {
 	def watch = false
 	
 	def watch()  {
-	    id = request.getParameter("v")
+	    id = getParameter("v")
 	    if(id) {
 	       watch = true
-	       def location =  "https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet"
+	       def location = "https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet"
 	       def connection = new URL(location).openConnection() as HttpURLConnection
 	       connection.setRequestProperty( 'User-Agent', 'groovy' )
 	       connection.setRequestProperty( 'Accept', 'application/json' )
@@ -20,21 +20,21 @@ class ModuleAction extends ActionSupport {
 		      String description = info.items[0].snippet.description
 		      if(description.length() > 500) description = description.substring(0,500)
 		      info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
-		      request.setAttribute("info",info)
+		      setAttribute("info",info)
 		      SUCCESS
 		   } else {
-			  response.sendRedirect(request.contextPath)
+			  redirect(request.contextPath)
 		   }
 			
 		}
 	    else {
-	     response.sendRedirect(request.contextPath)
+	     redirect(request.contextPath)
 	    }
 	}
 	
 	def search()  {
-	    query = request.getParameter("search_query")
-	    query ? SUCCESS : response.sendRedirect(request.contextPath)
+	    query = getParameter("search_query")
+	    query ? SUCCESS : redirect(request.contextPath)
 	}
 	
 }
