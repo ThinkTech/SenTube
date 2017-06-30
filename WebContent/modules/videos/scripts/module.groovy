@@ -23,18 +23,18 @@ class ModuleAction extends ActionSupport {
 		      setAttribute("info",info)
 		      SUCCESS
 		   } else {
-			  redirect(request.contextPath)
+			  redirect(contextPath)
 		   }
 			
 		}
 	    else {
-	     redirect(request.contextPath)
+	     redirect(contextPath)
 	    }
 	}
 	
 	def search()  {
 	    query = getParameter("search_query")
-	    query ? SUCCESS : redirect(request.contextPath)
+	    query ? SUCCESS : redirect(contextPath)
 	}
 	
 }
