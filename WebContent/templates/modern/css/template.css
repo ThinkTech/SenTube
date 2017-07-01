@@ -659,6 +659,21 @@ main {
     margin : initial;
 }
 
+#confirm-dialog-container a, #alert-dialog-container a,#alert-dialog-container span:nth-child(1) {
+	background : #cc181e;
+	background-color : #cc181e;
+}
+
+#alert-dialog-container a:hover,#alert-dialog-container a:focus {
+    color: #cc181e;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+#alert-dialog-container > div {
+    border: 1px solid #cc181e;
+}
+
 
 /*--------------------*/
 /* Footer */

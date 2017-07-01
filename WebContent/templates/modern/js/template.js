@@ -56,5 +56,21 @@ const showMainFull = function() {
 	$("div.language select").on("change",function(){
 		page.retranslate($(this).val());
 	});
+	
+	//search form
+	
+	const searchForm = $("#search");
+	searchForm.submit(function(event){
+		const input = $('input',searchForm);
+        const val = input.val();
+		if(val.trim() == '') {
+			const message = i18n("enter-search");
+			alert(message,function(){
+				input.focus();
+			});
+		    return false;
+		}
+	});
+	
 
 });
