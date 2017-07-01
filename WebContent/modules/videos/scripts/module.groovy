@@ -22,10 +22,10 @@ class ModuleAction extends ActionSupport {
 		      info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
 		      setAttribute("info",info)
 		      SUCCESS
-           } else {
+		   } else {
 		      ERROR
-           }
-        }
+		   }
+		}
 	    else {
 	     ERROR
 	    }
