@@ -62,3 +62,7 @@
   <!-- index js file include -->
  
  <script src="${js}/index.js"></script>
+ <style>
+ #wait {padding-left: 0px;padding-top: 17.5%;}
+ #loader {margin : auto;}
+ </style>

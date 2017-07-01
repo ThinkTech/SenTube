@@ -59,7 +59,7 @@
         <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
       </div>
        <form id="search" action="search" method="GET">
-        <input  name="search_query"  type="text" data-translation="search"/>
+        <input  name="search_query" value="${query}" type="text" data-translation="search"/>
         <input type="submit" value=""/>
        </form>
       <div id="navbar" class="navbar-collapse collapse navbar_area">          
