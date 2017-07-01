@@ -33,8 +33,8 @@ class ModuleAction extends ActionSupport {
 	}
 	
 	def search()  {
-	    query = getParameter("search_query")
-	    query ? SUCCESS : redirect(contextPath)
+	    query = getParameter("search_query") as String
+	    query?.trim() ? SUCCESS : redirect(contextPath)
 	}
 	
 }
