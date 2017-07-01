@@ -5,7 +5,7 @@ class ModuleAction extends ActionSupport {
 
 	def id
 	def query
-	def watch = false
+	def watch
 	
 	def watch()  {
 	    id = getParameter("v")
