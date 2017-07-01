@@ -27,9 +27,7 @@ const showMainFull = function() {
 
  jQuery(function($){
 
-  /* ----------------------------------------------------------- */
-  /*  1. Body click
-  /* ----------------------------------------------------------- */
+//Body click event
 
 $("body").click(function(event){
 	const aside = $("aside");
@@ -38,10 +36,6 @@ $("body").click(function(event){
 
 
 });
-
-/* ----------------------------------------------------------- */
-/*  5. ScrollTop
-/* ----------------------------------------------------------- */
 
 //Check to see if the window is top if not then display button
 
@@ -60,16 +54,8 @@ $('.scrollToTop').click(function(){
   return false;
 });
 
+//Change event to retranslate the page
+
 $("div.language select").on("change",function(){
-	var language = $(this).val();
-	page.retranslate(language);
-});
-
-
-/* ----------------------------------------------------------- */
-/*  7. Preloader
-/* ----------------------------------------------------------- */
-jQuery(window).ready(function() { // makes sure the whole site is loaded
-   $('body').delay(100).css({'overflow':'visible'});
-   
+	page.retranslate($(this).val());
 });
