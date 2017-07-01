@@ -18,7 +18,10 @@
 }
 
 .photo {
-	display:inline-block;margin:-0.203125em 0.8125em;padding:0px;
+	display:inline-block;
+	margin:-0.203125em 0.8125em;
+	margin-left: 6px;
+	padding:0px;
 	height:100%;
 	width:5em;
 	max-width:5em;
@@ -120,6 +123,7 @@
 }
 
 div.channel {
+	padding-top: 20px;
 	margin-top : 20px;
 	background-color : #fff;
 	padding-bottom : 40px;
