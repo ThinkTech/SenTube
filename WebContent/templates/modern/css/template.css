@@ -659,6 +659,10 @@ main {
     margin : initial;
 }
 
+#confirm-dialog-container,#confirm-dialog-container div , #alert-dialog-container, #alert-dialog-container div {
+	opacity : 1;
+}
+
 #confirm-dialog-container a, #alert-dialog-container a,#alert-dialog-container span:nth-child(1) {
 	background : #cc181e;
 	background-color : #cc181e;
