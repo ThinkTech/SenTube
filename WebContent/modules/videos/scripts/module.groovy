@@ -23,7 +23,7 @@ class ModuleAction extends ActionSupport {
 		      setAttribute("info",info)
 		      SUCCESS
 		   } else {
-			  ERROR
+		      ERROR
 		   }
 			
 		}
