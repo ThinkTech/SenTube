@@ -27,35 +27,34 @@ const showMainFull = function() {
 
  jQuery(function($){
 
-//Body click event
+	//Body click event
+	
+	$("body").click(function(event){
+		const aside = $("aside");
+		if(!$("button.aside-toggle").is($(event.target)) && !$("button.aside-toggle span.icon-bar").is($(event.target)) && aside.hasClass("toggled")) aside.hide();
+	});
+	
+	//Check to see if the window is top if not then display button
+	
+	$(window).scroll(function(){
+	  if ($(this).scrollTop() > 300) {
+	    $('.scrollToTop').fadeIn();
+	  } else {
+	    $('.scrollToTop').fadeOut();
+	  }
+	});
+	 
+	//Click event to scroll to top
+	
+	$('.scrollToTop').click(function(){
+	  $('html, body').animate({scrollTop : 0},800);
+	  return false;
+	});
+	
+	//Change event to retranslate the page
+	
+	$("div.language select").on("change",function(){
+		page.retranslate($(this).val());
+	});
 
-$("body").click(function(event){
-	const aside = $("aside");
-	if(!$("button.aside-toggle").is($(event.target)) && !$("button.aside-toggle span.icon-bar").is($(event.target)) && aside.hasClass("toggled")) aside.hide();
-});
-
-
-});
-
-//Check to see if the window is top if not then display button
-
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 300) {
-    $('.scrollToTop').fadeIn();
-  } else {
-    $('.scrollToTop').fadeOut();
-  }
-});
- 
-//Click event to scroll to top
-
-$('.scrollToTop').click(function(){
-  $('html, body').animate({scrollTop : 0},800);
-  return false;
-});
-
-//Change event to retranslate the page
-
-$("div.language select").on("change",function(){
-	page.retranslate($(this).val());
 });
