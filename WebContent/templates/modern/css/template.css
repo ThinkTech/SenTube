@@ -542,6 +542,11 @@ aside span:hover, aside span span:hover,aside li:hover {
 	cursor : pointer;
 }
 
+aside span.active > span:hover {
+	background-color : inherit;
+	color : inherit;
+}
+
 aside span.active {
 	background-color : #cc181e;
 }
