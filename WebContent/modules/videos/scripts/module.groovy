@@ -21,9 +21,9 @@ class ModuleAction extends ActionSupport {
 		      info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
 		      setAttribute("info",info)
 		      watch = true   
-		   }
 		}
-		watch ? SUCCESS : ERROR 
+	     }
+	     watch ? SUCCESS : ERROR 
 	}
 	
 	def search()  {
