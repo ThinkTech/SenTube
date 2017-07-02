@@ -13,15 +13,15 @@ class ModuleAction extends ActionSupport {
 	       def location = "https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet"
 	       def connection = new URL(location).openConnection() as HttpURLConnection
 	       if(connection.responseCode == 200) { 
-		      def info = new JsonSlurper().parseText(connection.inputStream.text)
-		      def description = info.items[0].snippet.description as String
-		      if(description.length() > 500) description = description.substring(0,500)
-		      info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
-		      setAttribute("info",info)
-		      watch = true   
-		   }
-		}
-		watch ? SUCCESS : ERROR 
+		   def info = new JsonSlurper().parseText(connection.inputStream.text)
+		   def description = info.items[0].snippet.description as String
+		   if(description.length() > 500) description = description.substring(0,500)
+		   info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
+		   setAttribute("info",info)
+		   watch = true   
+	       }
+	     }
+	     watch ? SUCCESS : ERROR 
 	}
 	
 	def search()  {
