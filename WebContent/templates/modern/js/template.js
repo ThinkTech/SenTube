@@ -57,11 +57,11 @@ const showMainFull = function() {
 		page.retranslate($(this).val());
 	});
 	
-	//search form
+	//search form input validation
 	
 	const searchForm = $("#search");
 	searchForm.submit(function(event){
-		const input = $('input',searchForm);
+		const input = $('input[type=text]',searchForm);
         const val = input.val();
 		if(val.trim() == '') {
 			const message = i18n("enter-search");
