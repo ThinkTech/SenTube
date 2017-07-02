@@ -130,8 +130,8 @@
   <footer id="footer">
      <div class="language">
 		<select id="select">
-		     <option id="english" value="en" data-translation="english">English</option>
-		    <option id="french" value="fr" data-translation="french">French</option>
+		     <option id="english" value="en" data-translation="english"></option>
+		    <option id="french" value="fr" data-translation="french"></option>
 		</select>
 	  </div>
     <div class="developer">
