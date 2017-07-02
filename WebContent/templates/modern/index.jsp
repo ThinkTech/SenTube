@@ -155,7 +155,6 @@
        app.ready(function(){
           page.translate(["i18n/app"],"${request.locale.language}",function(){
         	  page.show();
-        	  $("div.language select").val(page.language);
           });
        });
      </script> 
