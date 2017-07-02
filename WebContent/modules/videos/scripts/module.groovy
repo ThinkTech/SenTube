@@ -10,7 +10,6 @@ class ModuleAction extends ActionSupport {
 	def watch()  {
 	    id = getParameter("v")
 	    if(id) {
-	       watch = true
 	       def location = "https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet"
 	       def connection = new URL(location).openConnection() as HttpURLConnection
 	       connection.setRequestProperty('User-Agent','groovy')
@@ -21,14 +20,10 @@ class ModuleAction extends ActionSupport {
 		      if(description.length() > 500) description = description.substring(0,500)
 		      info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
 		      setAttribute("info",info)
-		      SUCCESS
-		} else {
-		      ERROR
+		      watch = true   
+		   }
 		}
-	     }
-	     else {
-	      ERROR
-	     }
+		watch ? SUCCESS : ERROR 
 	}
 	
 	def search()  {
