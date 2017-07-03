@@ -2,7 +2,6 @@
 <template>
 	<name>modern</name>
 	<type>front-end</type>
-	<selected>true</selected>
 	<author>ThinkTech</author>
 	<authorUrl>https://www.thinktech.sn/</authorUrl>
 	<creationDate>04/04/2017</creationDate>
