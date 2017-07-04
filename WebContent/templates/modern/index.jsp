@@ -153,7 +153,7 @@
   
   <script>
        app.ready(function(){
-          page.translate(["i18n/app"],"${request.locale.language}",function(){
+          page.translate(["i18n/app"],"${language}",function(){
         	  page.show();
           });
        });
