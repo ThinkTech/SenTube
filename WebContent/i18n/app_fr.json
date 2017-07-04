@@ -1,5 +1,4 @@
 {
-"values":{
     "english" : "Anglais",
 	"french" : "Français",
     "search": "Rechercher...",
@@ -42,5 +41,4 @@
 	"message-404":"La page demandée ne peut être trouvée.",
 	"information":"Information",
 	"enter-search":"entrer votre recherche"	
-}
 }
