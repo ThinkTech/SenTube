@@ -18,7 +18,8 @@ class ModuleAction extends ActionSupport {
 		   if(description.length() > 500) description = description.substring(0,500)
 		   info.items[0].snippet.description = description.replace("\"", "").replace("\n", " ")
 		   setAttribute("info",info)
-		   watch = true   
+		   watch = true
+		   response.setHeader("Cache-Control", "private, max-age=7200")   
 	       }
 	     }
 	     watch ? SUCCESS : ERROR 
