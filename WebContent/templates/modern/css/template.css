@@ -291,7 +291,7 @@ body {
   overflow-x: hidden;
   font-family: Roboto, sans-serif;  
   font-size : 100%;
-  opacity : 0;
+  opacity : 1;
   margin : 0;
   padding : 0;
 }

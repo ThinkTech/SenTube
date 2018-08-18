@@ -3,12 +3,13 @@ const display = function(videoId,cache){
 	const video = {};
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 	app.get("https://www.googleapis.com/youtube/v3/videos?id="+videoId+"&key=AIzaSyBaYaWQcSP8P1Dau3kxDitRo7W9VA4EOPg&part=snippet,statistics",function(info){
+		console.log(info);
 		video.videoId = videoId;
 		video.title = info.items[0].snippet.title;
 		document.title = video.title;
 		video.publishedAt = new Date(info.items[0].snippet.publishedAt).toLocaleDateString(page.language,options);
 		video.description = info.items[0].snippet.description;
-		video.description = video.description.linkify();
+		//video.description = video.description.linkify();
 		video.viewCount = info.items[0].statistics.viewCount.replace(/\B(?=(\d{3})+\b)/g, ",");
 		video.commentCount = info.items[0].statistics.commentCount ? info.items[0].statistics.commentCount.replace(/\B(?=(\d{3})+\b)/g, ",") : 0;
 		video.likeCount = info.items[0].statistics.likeCount ? info.items[0].statistics.likeCount.replace(/\B(?=(\d{3})+\b)/g, ",") : "";

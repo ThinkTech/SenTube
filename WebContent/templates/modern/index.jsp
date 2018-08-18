@@ -9,7 +9,7 @@
     <title>SenTube</title>
     <base href="${path}"/>
     <!-- Metamorphosis css -->
-    <link href="css/metamorphosis.css" rel="stylesheet"/> 
+    <link href="css/metamorphosis.min.css" rel="stylesheet"/> 
     <!-- Template css -->
     <link href="templates/modern/css/template.css" rel="stylesheet"/> 
     <!-- Module css -->
@@ -146,18 +146,14 @@
  
   <!-- metamorphosis js file include -->
  
- <script src="js/metamorphosis.js"></script> 
+ <script src="js/metamorphosis.min.js"></script> 
+ 
+ <script src="js/app.js"></script> 
  
   <!-- template js file include -->
   <script src="templates/modern/js/template.js"></script>  
   
-  <script>
-       app.ready(function(){
-          page.translate(["i18n/app"],"${language}",function(){
-        	  page.show();
-          });
-       });
-     </script> 
-   
+  
+  
   </body>
 </html>

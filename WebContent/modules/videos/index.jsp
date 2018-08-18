@@ -14,7 +14,7 @@
  <span class="status">1/21</span>
   {#videos}
     <div class="video">
-	  <a href="watch?v={id}" title="{title}">
+	  <a href="videos/watch?v={id}" title="{title}">
 	   <div class="thumbnail"> 		
 	     <img src="https://i.ytimg.com/vi/{id}/mqdefault.jpg"/>  
 	     <span class="index">{index}</span> 	     
@@ -42,7 +42,7 @@
  <span class="status">1/21</span>
   {#videos}
     <div class="video">
-	  <a href="watch?v={id}" title="{title}">
+	  <a href="videos/watch?v={id}" title="{title}">
 	   <div class="thumbnail">
 	     <img src="https://i.ytimg.com/vi/{id}/mqdefault.jpg"/>
 	      <span class="index">{index}</span>   		   	     
